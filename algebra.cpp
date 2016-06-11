@@ -258,9 +258,8 @@ int main() {
 
 	// Testing & usage example of primes_up_to
 	vector<int> a = Algebra::primes_up_to(10);
-	assert(a.size() == 4);
-	assert(a[0] == 2 && a[1] == 3 && a[2] == 5 && a[3] == 7);
-
+	assert(a == ((vector<int>){2, 3, 5, 7}));
+	
 	// Testing & usage example of extended_gcd
 	int x, y;
 	assert(Algebra::extended_gcd(12, 30, x, y) == 6);
